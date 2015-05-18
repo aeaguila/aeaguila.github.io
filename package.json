@@ -1,0 +1,24 @@
+{
+  "name": "aeaguila.github.io",
+  "version": "1.0.0",
+  "description": "aeaguila.github.io ==================",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aeaguila/aeaguila.github.io"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aeaguila/aeaguila.github.io/issues"
+  },
+  "homepage": "https://github.com/aeaguila/aeaguila.github.io",
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-livereload": "^3.2.0",
+    "gulp-ruby-sass": "^0.7.1"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "aeaguila.github.io",
+  "version": "0.0.0",
+  "homepage": "https://github.com/aeaguila/aeaguila.github.io",
+  "authors": [
+    "theo <theo@chapterthreellc.com>"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "susy": "~2.2.5"
+  }
+}
