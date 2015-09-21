@@ -1,0 +1,44 @@
+.contact {
+  text-align: center;
+
+  [type="email"],
+  [name="body"] {
+    margin-bottom: 20px;
+  }
+
+  input {
+    height: 42px;
+    margin-bottom: 10px;
+  }
+
+  input,
+  textarea {
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #eee;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  textarea {
+    min-height: 126px;
+  }
+
+  [type="submit"] {
+    cursor: pointer;
+  }
+}
+
+.contact__form {
+  text-align: left;
+  display: inline-block;
+  width: 100%;
+
+  @media (min-width: 600px) {
+    width: 415px;
+  }
+}
+
+.contact__label {
+  display: block;
+}

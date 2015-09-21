@@ -1,0 +1,20 @@
+<div class="contact">
+  <h3>Feel free to contact me, I'd love to hear from you!</h3>
+  <form class="contact__form" action="http://formspree.io/theoballew@gmail.com" method="post">
+    <!-- <label class="contact__label">Name</label> -->
+    <input class="contact__first" type="text" name="name" placeholder="Name">
+
+    <input type="text" name="_gotcha" style="display:none" />
+
+    <!-- <label class="contact__label">Organization</label> -->
+    <input type="text" name="organization" placeholder="Organization">
+
+    <!-- <label class="contact__label">Email</label> -->
+    <input type="email" name="_replyto" placeholder="Email *">
+
+    <!-- <label class="contact__label">Message</label> -->
+    <textarea name="body" placeholder="Message *"></textarea>
+    <input id="submit" type="submit" value="Send">
+    <input type="hidden" name="_next" value="{{ site.baseurl }}?thanks" />
+  </form>
+</div>
