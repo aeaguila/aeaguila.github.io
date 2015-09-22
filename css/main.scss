@@ -44,7 +44,6 @@ $on-laptop:        800px;
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "../bower_components/susy/sass/susy",
-//        "../bower_components/sass-mq/mq",
         "base",
         "components/header",
         "components/footer",
