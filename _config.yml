@@ -10,3 +10,7 @@ github_username:  aeaguila
 
 # Build settings
 markdown: kramdown
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/

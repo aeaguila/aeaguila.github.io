@@ -1,0 +1,45 @@
+.project__wrapper {
+  padding-top: 16px;
+}
+
+.project {
+  width: calc(33% - 24px);
+  margin-bottom: 36px;
+  margin-right: 36px;
+  position: relative;
+  // border-radius: 100%;
+
+  overflow: hidden;
+  float: left;
+
+  img {
+    height: 100%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: .5s ease-in-out;
+
+    &:hover {
+      -webkit-filter: grayscale(0);
+      filter: grayscale(0);
+      filter: saturate(1);
+    }
+  }
+  
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  &::after {
+    display: block;
+    content: '';
+    padding-top: 100%;
+  }
+}
+
+.project__container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}

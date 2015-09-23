@@ -4,6 +4,20 @@ layout: default
 
 <div class="homepage-background">
   <div class="wrapper">
+
+    <div class="project__wrapper">
+      {% for project in site.projects %}
+        <div class="project">
+          <div class="project__container">      
+            <!-- <p>{{ project.title }}<p>       -->
+            <img src='assets/project_images/{{ project.image }}'></img>
+            <!-- <p>{{ project.content }}</p> -->
+          </div>
+
+        </div>
+      {% endfor %}
+    </div>
+    
   </div>
 
   {% include thanks.html %}
