@@ -1,11 +1,10 @@
 .site-header {
   border-bottom: 1px solid silver;
   background: $bg-header;
+  border-bottom: $bg-header-bottom;
 
   .wrapper {
     text-align: center;
-    border-bottom: $bg-header-bottom;
-    box-shadow: 0 2px 5px #aaa;
   }
 }
 

@@ -177,6 +177,11 @@ pre {
         padding-right: $spacing-unit;
         padding-left: $spacing-unit;
     }
+
+    @media (min-width: 1400px) {
+        max-width: -webkit-calc(1200px - (#{$spacing-unit}));
+        max-width:         calc(1200px - (#{$spacing-unit}));
+    }
 }
 
 
