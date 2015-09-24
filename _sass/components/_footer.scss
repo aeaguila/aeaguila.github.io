@@ -12,13 +12,13 @@ $footer-height: 200px;
 }
 
 .site-footer {
-  background: url('/assets/images/symphony.png');
+  border-top: $bg-footer-top;
+  background: $bg-footer;
   height: $footer-height;
   margin-top: -$footer-height;
 }
 
 .site-footer__wrapper {
-  background: rgba(0,0,0,.8);
   width: 100%;
   height: 100%;
 }

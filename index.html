@@ -6,14 +6,16 @@ layout: default
   <div class="wrapper">
 
     <div class="project__wrapper">
-      {% for project in site.projects %}
+      {% assign sorted_projects = (site.projects | sort: 'placement') %}
+      {% for project in sorted_projects %}
         <div class="project">
-          <div class="project__container">      
-            <!-- <p>{{ project.title }}<p>       -->
-            <img src='assets/project_images/{{ project.image }}'></img>
-            <!-- <p>{{ project.content }}</p> -->
-          </div>
-
+          <a href={{ project.permalink }}>
+            <div class="project__container">      
+              <!-- <p>{{ project.title }}<p>       -->
+              <img src='assets/project_images/{{ project.image }}'></img>
+              <!-- <p>{{ project.content }}</p> -->
+            </div>
+          </a>
         </div>
       {% endfor %}
     </div>

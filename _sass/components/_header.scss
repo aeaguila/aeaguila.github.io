@@ -1,8 +1,11 @@
 .site-header {
   border-bottom: 1px solid silver;
+  background: $bg-header;
 
   .wrapper {
     text-align: center;
+    border-bottom: $bg-header-bottom;
+    box-shadow: 0 2px 5px #aaa;
   }
 }
 
@@ -14,12 +17,13 @@
   h1, h2 {
     margin-bottom: 0;
     font-weight: bold;
+    color: $c-main-text;
   }
   h2 {
     clear: left;
     font-size: 20px;
     font-weight: 200;
-    color: grey;
+    color: $c-2nd-text;
   }
 
   &:hover {
@@ -51,15 +55,19 @@
   font-size: 20px;
   font-weight: 200;
   padding-bottom: 3px;
-  color: #1756a9;
+  color: $c-main-text;
 
   &.active {
-    border-bottom: 4px solid rgba(35, 82, 124, 0.4);
+    border-bottom: 4px solid $c-menu-underline;
   }
 
   &:hover {
     text-decoration: none;
     border-bottom: 4px solid rgba(35, 82, 124, 0.4);
+  }
+
+  &:visited {
+    color: $c-main-text;
   }
 
   &:first-child {

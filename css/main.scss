@@ -43,11 +43,13 @@ $on-laptop:        800px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "base",
+        "base/base",
+        "base/vars",
         "components/header",
         "components/footer",
         "components/contact",
-        "components/projects",
+        "components/project-gallery",
+        "components/horizontal-rule",
         "pages/homepage",
         "pages/about",
         "pages/default"
