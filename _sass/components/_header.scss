@@ -41,11 +41,17 @@
   margin: 0 0 20px 0;
   border-top: 1px solid #eee;
   padding-top: 15px;
+  @media (min-width: 400px) {
+    margin: 0 10% 20px 10%;
+  }  
+  @media (min-width: 500px) {
+    margin: 0 20% 20px 20%;
+  }
   @media (min-width: 600px) {
     border: none;
     padding: 0;
     float: right;
-    margin-top: 45px;
+    margin: 45px 0 20px 0;
   }
 }
 
