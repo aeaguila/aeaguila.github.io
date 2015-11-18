@@ -1,0 +1,63 @@
+.about-title {
+  width: calc(100% - 205px);
+  float: left;
+}
+
+.about-img {
+  height: 200px;
+  float: right;
+  margin: 6px 0 20px 20px;
+  border: 5px solid white;
+  border-radius: 100%;
+}
+
+.skills {
+  @extend %clearfix;
+  margin-bottom: 30px;
+}
+
+.resume-link {
+  display: inline-block;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: $bg-header;
+  border: 0;
+  border-radius: 3px;
+  box-shadow: 0 2px 0 rgba(0,0,0,0.9);
+  color: #fff !important;
+  font-size: 15px;
+  font-size: .9375rem;
+  line-height: 3.06667;
+  text-align: center;
+  transition: 150ms ease color,150ms ease background-color;
+
+  &:hover {
+    text-decoration: none;
+    background-color: lighten($bg-header, 20%);
+  }
+
+  &:active {
+    box-shadow: none;
+    position: relative;
+    top: 2px;
+  }
+}
+
+@media (min-width: 750px) {
+  .skill {
+    width: 300px;
+    float: left;
+  }
+}
+
+@media (min-width: 800px) {
+  .skills {
+    padding-right: 20%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .skills {
+    padding-right: 30%;
+  }
+}

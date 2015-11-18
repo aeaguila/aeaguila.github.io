@@ -3,12 +3,13 @@
 }
 
 .project {
-  width: calc(33% - 24px);
-  margin-bottom: 36px;
-  margin-right: 36px;
+  width: calc(33% - 6px);
+  margin-bottom: 9px;
+  margin-right: 9px;
   position: relative;
-  background: white;
-  // border-radius: 100%;
+  background: $bg-project;
+  border: $project-border;
+  border-radius: 100%;
 
   overflow: hidden;
   float: left;
@@ -18,7 +19,9 @@
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
     transition: .5s ease-in-out;
-    // border-radius: 100%;
+    border: $project-border;
+
+    border-radius: 100%;
 
     &:hover {
       -webkit-filter: grayscale(0);
@@ -39,11 +42,9 @@
 }
 
 .project__container {
-  $border-width: 5px;
-
   position: absolute;
-  top: $border-width;
-  bottom: $border-width;
-  left: $border-width;
-  right: $border-width;
+  top: $project-border-width;
+  bottom: $project-border-width;
+  left: $project-border-width;
+  right: $project-border-width;
 }

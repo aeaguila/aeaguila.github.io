@@ -4,6 +4,10 @@ $c-menu-underline: desaturate(lighten($c-main-text, 35%), 35%);
 $bg-header : #fff;
 $bg-header-bottom : 15px solid desaturate($c-main-text, 35%);
 
+$bg-project: white;
+$project-border: 1px solid #aaa;
+$project-border-width: 3px;
+
 $bg-main : #edecea;
 
 $bg-footer-top: 15px solid #292929;
@@ -15,17 +19,48 @@ $bg-footer :
   url('/assets/images/symphony.png');
 
 /* ==========================================================================
-    vvv Experiment vvv
-   ========================================================================== */
+  Experiment 1
+ ========================================================================== */
 
-$c-main-text : #1756a9;
-$c-2nd-text : grey;
+$c-main-text : white;
+$c-2nd-text : #ccc;
 $c-menu-underline: desaturate(lighten($c-main-text, 35%), 35%);
-$bg-header : #fff;
+
+$bg-header : #555;
 $bg-header-bottom : 15px solid desaturate($c-main-text, 35%);
 
-$bg-main : #edecea;
+$bg-project: white;
+$project-border: 1px solid white;
+$project-border-width: 10px;
 
+$bg-main : #eee;
+
+$bg-footer-top: 15px solid white;
+$bg-footer : 
+  linear-gradient(
+    rgba(0,0,0,.8),
+    rgba(0,0,0,.8)
+  ),
+  url('/assets/images/symphony.png');
+
+/* ==========================================================================
+  Experiment 2
+ ========================================================================== */
+
+$c-main-text : white;
+$c-2nd-text : #ccc;
+$c-menu-underline: desaturate(lighten($c-main-text, 35%), 35%);
+
+$bg-header : #555;
+$bg-header-bottom : 5px solid desaturate($c-main-text, 35%);
+
+$bg-project: white;
+$project-border: 1px solid white;
+$project-border-width: 10px;
+
+$bg-main : #eee;
+
+$bg-footer-top: 5px solid white;
 $bg-footer : 
   linear-gradient(
     rgba(0,0,0,.8),
