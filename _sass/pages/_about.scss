@@ -1,12 +1,8 @@
-.about-title {
-  width: calc(100% - 205px);
-  float: left;
-}
-
 .about-img {
-  height: 200px;
-  float: right;
-  margin: 6px 0 20px 20px;
+  width: 150px;
+  display: block;
+  margin: 0 auto 20px auto;
+
   border: 5px solid white;
   border-radius: 100%;
 }
@@ -43,14 +39,31 @@
   }
 }
 
+@media (min-width: 380px) {
+  .about-title {
+    width: calc(100% - 170px);
+    float: left;
+  }
+  .about-img {
+    float: right;
+    margin: 6px 0 20px 20px;
+  }
+}
+
 @media (min-width: 750px) {
+  .about-title {
+    width: calc(100% - 220px);
+  }
+  .about-img {
+    width: 200px;
+  }
   .skill {
     width: 300px;
     float: left;
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 850px) {
   .skills {
     padding-right: 20%;
   }
