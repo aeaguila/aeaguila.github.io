@@ -1,0 +1,55 @@
+.project-wrapper {
+  h2 {
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+  .subhead {
+    font-size: 18px;
+    margin-bottom: 20px;
+    display: block;
+  }
+  .section-heading {
+    font-size: 18px;
+    margin-bottom: 0;
+    text-decoration: underline;
+    font-weight: 500;
+  }
+  .list-heading {
+    margin-bottom: 5px;
+  }
+  ul {
+    margin-left: 50px;
+  }
+
+  .project-image--right,
+  .project-image--left {
+    width: 40%;
+    border: 5px solid white;
+  }
+
+  .project-image--right {
+    float: right;
+    margin: 0 0 10px 10px;
+
+    &.cl {
+      width: 30%;
+    }
+    &.mfd,
+    &.maserati {
+      width: 50%;
+    }
+  }
+
+  .project-image--left {
+    float: left;
+    margin: 0 10px 10px 0;
+    
+    &.mfd {
+      width: 20%;
+    }
+  }
+
+  .section-heading--over-img {
+    margin-bottom: 10px;
+  }
+}
