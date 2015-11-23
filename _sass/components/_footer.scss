@@ -1,4 +1,4 @@
-$footer-height: 150px;
+$footer-height: 250px;
 
 .page-content {
   min-height: calc(100% - 118px);
@@ -28,14 +28,18 @@ $footer-height: 150px;
   color: $c-main-text;
   font-size: 15px;
   margin-left: 0;
-  margin-top: $footer-height / 2 - 15px;
+  margin-top: 60px;
 
   li {
-    float: left;
+    text-align: center;
+    display: block;
+    margin-bottom: 10px;
 
     &:after {
+      display: block;
       content: "·";
       padding: 0 7px;
+
     }
     &:last-child:after {
       content: "";
@@ -44,5 +48,41 @@ $footer-height: 150px;
 
   a {
     color: $c-main-text;
+  }
+}
+
+@media (min-width: 430px) {
+  $footer-height: 150px;
+
+  .page-content {
+    padding-bottom: $footer-height;
+
+    &::after {
+      height: $footer-height;
+    }
+  }
+
+  .site-footer {
+    height: $footer-height;
+    margin-top: -$footer-height;
+  }
+
+  .site-footer__links {
+    margin-top: $footer-height / 2 - 15px;
+
+    li {
+      float: left;
+
+      &:after {
+        padding: 0 12px;
+        display: inline-block;
+      }
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .site-footer__links li:after {
+    padding: 0 7px;
   }
 }
