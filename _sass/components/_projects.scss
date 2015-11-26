@@ -1,4 +1,4 @@
-.project-wrapper {
+.project__wrapper {
   h2 {
     font-weight: 500;
     margin-bottom: 0;
@@ -19,6 +19,21 @@
   }
   ul {
     margin-left: 50px;
+  }
+
+  .project__links {
+    @extend %clearfix;
+
+    margin-bottom: 20px;
+
+    .project__previous {
+      float: left;
+      text-decoration: none;
+    }
+    .project__next {
+      float: right;
+      text-decoration: none;
+    }
   }
 
   .project-image--right,
@@ -51,5 +66,126 @@
 
   .section-heading--over-img {
     margin-bottom: 10px;
+  }
+}
+
+.project {
+  box-shadow: 0 5px 20px #bbb;
+}
+
+.project__menu-wrapper {
+  margin: 0 auto;
+}
+
+.project__menu {
+  @extend %clearfix;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.project__menu-header {
+  font-weight: 500;
+}
+
+.project__image-wrapper {
+  width: 60%;
+  max-width: 150px;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border-radius: 100%;
+  background: white;
+  box-shadow: 1px 3px 10px #bbb;
+
+  .inner-wrapper {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    border-radius: 100%;
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: .4s ease-in-out;
+
+    &:hover {
+      -webkit-filter: grayscale(0);
+      filter: grayscale(0);
+      filter: saturate(1);
+    }
+  }
+
+  &.active {
+    img {
+      -webkit-filter: grayscale(0);
+      filter: grayscale(0);
+      filter: saturate(1);
+    }
+  }
+
+  &:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+  }
+}
+
+@media (min-width: 400px) {
+  .project__menu {
+    max-width: 315px;
+  }
+  .project__menu-item {
+    &:nth-child(2n) .project__image-wrapper {
+      margin-right: 0;
+    }
+  }
+  .project__image-wrapper {
+    float: left;
+    width: 45%;
+    margin: 0 5% 5% 0;
+  }
+}
+
+@media (min-width: 550px) {
+  .project__menu {
+    max-width: 500px;
+  }
+  .project__menu-item {
+    &:nth-child(n) .project__image-wrapper {
+      margin-right: 5%;
+    }
+    &:nth-child(3n) .project__image-wrapper {
+      margin-right: 0;
+    }
+  }
+  .project__image-wrapper {
+    float: left;
+    width: 30%;
+    margin: 0 5% 5% 0;
+  }
+}
+
+@media (min-width: 850px) {
+  .project__menu {
+    max-width: 100%;
+  }
+  .project__menu-item {
+    &:nth-child(n) .project__image-wrapper {
+      margin-right: 1.8%;
+    }
+    &:last-child .project__image-wrapper {
+      margin-right: 0;
+    }
+  }
+  .project__image-wrapper {
+    max-width: 100%;
+    width: 15%;
+    margin-right: 1.8%;
   }
 }

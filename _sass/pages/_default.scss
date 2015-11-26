@@ -1,5 +1,10 @@
 .page-content {
+  box-shadow: 0 4px 20px #aaa inset, 0 -154px 20px #aaa inset;
   padding-top: 20px;
   padding-bottom: 20px;
   background: $bg-main;
+  width: 110%;
+  margin-left: -5%;
+  padding-left: 5%;
+  padding-right: 5%;
 }

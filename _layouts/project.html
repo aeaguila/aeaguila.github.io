@@ -2,6 +2,59 @@
 layout: default
 ---
 
-<div class="wrapper project-wrapper">
+{% assign previous = page.placement | minus: 1 %}
+{% assign next = page.placement | plus: 1 %}
+{% assign projects_sorted = site.projects | sort: 'placement' %}
+
+{% for project in site.projects %}
+
+  {% if project.placement == previous %}
+    {% assign previous = project %}
+  {% endif %}
+
+  {% if project.placement == next %}
+    {% assign next = project %}
+  {% endif %}
+
+{% endfor %}
+
+{% if previous.placement == nil %}
+  {% assign previous = (site.projects | sort: 'placement' | last) %}
+{% endif %}
+
+{% if next.placement == nil %}
+  {% assign next = (site.projects | sort: 'placement' | first) %}
+{% endif %}
+
+<div class="wrapper project__wrapper">
+  <div class="project__links">
+      <a class="project__previous" href="{{ previous.url }}">← previous</a>
+      <a class="project__next" href="{{ next.url }}">next →</a>
+  </div>
+
   {{ content }}
+</div>
+
+<div class="project__menu-wrapper wrapper">
+  <h2 class="project__menu-header">Other Projects:</h2>
+
+  <div class="project__menu">
+    {% for project in projects_sorted %}
+      {% if project.placement == page.placement %}
+        {% assign active = 'active' %}
+      {% else %}
+        {% assign active = '' %}
+      {% endif %}
+        <div class="project__menu-item">
+          {% if active == '' %} <a href="{{ project.url }}"> {% endif %}
+            <div class="project__image-wrapper {{ active }}">
+              <div class="inner-wrapper">
+                <img src="/assets/gallery_images/{{ project.image }}" alt="">
+              </div>
+            </div>
+          {% if active == '' %} </a> {% endif %}
+        </div>
+    {% endfor %}
+  </div>
+  
 </div>
