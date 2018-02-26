@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<div class="homepage-background">
+  <div class="wrapper">
+
+    <div class="project__wrapper">
+      {% assign sorted_projects = (site.projects | sort: 'placement') %}
+      {% for project in sorted_projects %}
+        <div class="project">
+          <a href={{ project.permalink }}>
+            <div class="project__container">      
+              <img src='assets/gallery_images/{{ project.image }}'></img>
+            </div>
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+    
+  </div>
+
+  {% include thanks.html %}
+
+</div>

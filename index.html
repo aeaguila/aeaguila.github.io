@@ -1,25 +1,29 @@
----
-layout: default
----
-
-<div class="homepage-background">
-  <div class="wrapper">
-
-    <div class="project__wrapper">
-      {% assign sorted_projects = (site.projects | sort: 'placement') %}
-      {% for project in sorted_projects %}
-        <div class="project">
-          <a href={{ project.permalink }}>
-            <div class="project__container">      
-              <img src='assets/gallery_images/{{ project.image }}'></img>
-            </div>
-          </a>
-        </div>
-      {% endfor %}
-    </div>
-    
-  </div>
-
-  {% include thanks.html %}
-
-</div>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <style>
+      body {
+        margin-top: 20vh;
+      }
+      p {
+        font-size: calc(10px + 1vw);
+        text-align: center;
+        margin: 0 auto;
+        font-family: 'Roboto', sans-serif;
+        margin: 0 0 20px 0;
+      }
+      h1 {
+        text-align: center;
+        margin: 0 auto;
+        font-size: calc(10px + 5vw);
+        font-family: 'Roboto', sans-serif;
+        margin: 0 0 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Sorry for the inconvenience, my portfolio is currently</p>
+    <h1>Under Construction</h1>
+    <p>Please feel free to reach out to me via email at <a href="mailto:aeaguila10@gmail.com">aeaguila10@gmail.com</a></p>
+  </body>
+</html>
